@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <!-- For help on layout, check out https://www.codementor.io/css/tutorial/4-different-layout-techniques-create-single-page TRY USING FLEXBOX!!! -->
+    <head>
+        <meta charset="utf-8">
+        <title>Selina Her</title>
+        <link rel="stylesheet" href="Assets/Stylesheets/main.css"
+    </head>
+    <body id="top" style="background-color:#F5E3E2;margin:0 0 0 0;"> 
+        <header class="container">
+            
+            <section class="container group"> <!-- Should the group class go in the header element?? -->
+                <h1 class="logo">
+                    <!-- this is like how a global logo will link back to the homepage? -->
+                    <a ref="index.html">Selina <br> Her</a>
+                </h1>
+            </section>
+            
+            <h3>designing for creativity + collaboration</h3>
+            
+            <nav>
+                <!-- target="_blank" means the link will open in a new window -->    
+                <a href="index.html" target="_blank">Home</a>
+                <a href="portfolio.html" target="_blank">Portfolio</a>
+                <a href="contact.html" target="_blank">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="hero container">
+            <img src="Images/Homepage/LMUHouse_Square.jpg" alt="Homepage Profile Pic" style="max-width:50%;">
+        </section>   
+        
+        <section class="container">
+            <h1 style="color:#4C5361;font-family:Courier" align="center;">Selina Her</h1>   
+            <h3 style="color:#4C5361;">UI/UX Designer</h3>
+            <h3 style="color:#4C5361;">Stanford University | Honors Candidate in Design</h3>
+            <h3 style="color:#4C5361;">Currently at The Honest Company</h3>
+            <h3 style="color:#4C5361;">Currently at The Honest Company</h3>
+
+            <!--remember, you can add css inline to an html doc. just need to start with "style"". but they should really be separated-->
+            <a class="btn btn-alt" href="portfolio.html">
+                <button type="button" style="background-color:#4C5361;color:white;border:none;font-size:20px;border-radius:3px">Test Button!</button>
+            </a>
+        </section>
+            <!--alternatively, a link: 
+            <a href="portfolio.html">See My Work!></a> --> 
+        
+        <h2>Portfolio Gallery</h2>
+        <ul>
+            <!-- Still need to choose which/whether to add images of misc work -->
+            <li><a href="image1">Image 1</a></li>
+        </ul>
+        
+        <!--email hyperlink. The %20 encodes for spaces between wordsin the subject lin. Lines breaks are %0A. The & separates the 2 attributes: subject and body. Theseattributes are populated with the values shown below-->
+        <a href="mailto:sher820@stanford.edu?subject=Portfolio%20Inquiry&body=Thanks%20for%20reaching%20out!">Email Me</a>
+        
+        <!-- this references <body id="top"> -->
+        <a href="#top">Back to top</a>
+        
+        <footer class="primary-footer container group">
+            <nav>
+                <!-- target="_blank" means the link will open in a new window -->
+                <a href="index.html" target="_blank">Home</a>
+                <a href="portfolio.html" target="_blank">Portfolio</a>
+                <a href="contact.html" target="_blank">Contact</a>
+            </nav>
+            
+            <!-- Copyright year -->
+            <small>&copy; Selina Her 2016</small>
+        </footer>
+    </body>
+</html>
