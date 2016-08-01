@@ -1,7 +1,10 @@
+
+
 /* CSS Reset by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
 
+/* IT APPEARS THIS CSS RESET IS PREVENTING MY CSS CHANGES FROM BEING MADE.....
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,8 +24,10 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+} */
+
 /* HTML5 display-role reset for older browsers */
+/*
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -44,7 +49,8 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-    
+
+*/  
     
 /* 
     =======================================
@@ -61,18 +67,18 @@ table {
     
     .container {
         margin: 0 auto;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
         width: 960px;
-    }
+    }  
 }
-  
-    
+
 /*
   ========================================
   Clearfix
   ========================================
 */
+/*
     
 .group:before,
 .group:after {
@@ -86,6 +92,7 @@ table {
   clear: both;
   *zoom: 1;
 }
+*/
     
 /*
   ========================================
@@ -94,7 +101,7 @@ table {
 */
 
     h1, h2, h3, h4, h5, h6, p {
-        margin-bottom: 20px;
+        margin: 0;
 }
     
 /*
@@ -103,17 +110,33 @@ table {
   ========================================
 */
 
+    button {
+        padding: 20px 30px;
+        background-color: #4C5361;
+        color: white;
+        border: none;
+        font-size: 20px;
+        border-radius: 0px;
+    }
+
+/*
     .btn {
+        background-color: #4C5361;
+        font-size: 20px;
         border-radius: 5px;
         display: inline-block;
         margin: 0;
+        color: white;
+        border: none;
+
+        border-radius: 0px;
     }
     
     .btn-alt {
         border: 1px solid #dfe2e5;
-        padding: 10px 30px;
+        padding: 20px 30px;
     }
-    
+*/
     
 /*
   ========================================
@@ -126,12 +149,35 @@ table {
     }
     
     section {
-        float: left;
-        margin: 0;
-        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0%;
+        width: 100%;
     }
+
+.group {
+    width: 45%;
+}
+
+.text {
+    margin: 0 1.5%;
+}
     
-    
+
+/*
+  ========================================
+  Fixed Header/Nav
+  ========================================
+*/
+
+.fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    width=100%;
+    background-color: aqua;
+}
+
 /*
   ========================================
   H1
@@ -139,8 +185,10 @@ table {
 */
 
     .logo {
+        font-family: sans-serif;
         border-bottom: 4px solid #648880;
-        padding: 40px 10px;
+        color: darkgreen;
+        padding: 10px 10px;
         float: left;
     }    
     
@@ -156,5 +204,20 @@ table {
     
     .primary-footer {
         padding-top: 44px;
-        padding-bottom: 44px;s
+        padding-bottom: 44px;
     }
+
+    
+/*
+  ========================================
+  Image
+  ========================================
+*/
+
+.largeImage {
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
