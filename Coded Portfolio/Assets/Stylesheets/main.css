@@ -1,10 +1,8 @@
-
-
-/* CSS Reset by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-
-/* IT APPEARS THIS CSS RESET IS PREVENTING MY CSS CHANGES FROM BEING MADE.....
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,44 +12,41 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-} */
-
-/* HTML5 display-role reset for older browsers */
-/*
-article, aside, details, figcaption, figure,
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers /
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
 
-*/  
-    
 /* 
     =======================================
     GRID
@@ -65,12 +60,12 @@ table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    .container {
-        margin: 0 auto;
+/*    .container {
+        margin: auto;
         padding-left: 0px;
         padding-right: 0px;
-        width: 960px;
-    }  
+        width: 960;
+    }  */
 }
 
 /*
@@ -101,8 +96,8 @@ table {
 */
 
 body {
-    margin-top: 3%;
-    margin-bottom: 4%;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
 } 
@@ -115,9 +110,12 @@ body {
     h1, h2, h3, h4, h5, h6, p {
         margin: 0;
         color:#4C5361;
-        font-family: sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
 }
-    
+
+h3 {
+    margin: 1em 0em;
+}
 /*
   ========================================
   Button
@@ -157,6 +155,29 @@ body {
   Home Page
   ========================================
 */
+
+.flexboxContainer {
+    display: flex;
+    flex-direction: row; /*this is default and doesn't really need to be here */
+}
+
+.imageCol {
+    width: 50%;
+    background: lightgreen;
+}
+
+.textCol {
+    display: flex;
+    width: 50%;
+    background: lightblue;
+}
+
+.text {
+    margin: auto;
+    padding: 5%;
+}
+
+
 .fullWidth {
     width: 100%;
 }
@@ -172,14 +193,6 @@ body {
         width: 100%;
     }
 
-.group {
-    width: 45%;
-}
-
-.text {
-    margin: 0 1.5%;
-}
-    
 
 /*
   ========================================
@@ -193,13 +206,11 @@ nav {
 
 .fixed {
     position: fixed;
-    padding-top: 20px;
-    padding-left: 20px;
+    right: 0;
     top:0;
-    left:0;
-    width=100%;
-    height: 5%;
-    background-color: white;
+    padding: 20px 20px 20px 20px;
+    background-color: none;
+    font-family: "Helvetica Neue"; 
 }
 
 /*
@@ -212,7 +223,7 @@ nav {
         font-family: sans-serif;
         border-bottom: 4px solid #648880;
         color: gray;
-        padding: 10px 10px;
+        padding: 0px 0px;
         float: left;
     }    
     
@@ -227,18 +238,16 @@ nav {
     }
     
     .primary-footer {
-        color: gray;
-        position: fixed;
+        display: flex;
+        position: absolute;
+        right: 0;
         bottom: 0;
         left: 0;
         height: 5%;
         background-color: white;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
+        padding: 1em;
     }
 
-    
 /*
   ========================================
   Image
@@ -246,7 +255,7 @@ nav {
 */
 
 .largeImage {
-    max-width: 100%;
+    width: 100%;
     padding: 0;
     border: 0;
     margin-left: 0;

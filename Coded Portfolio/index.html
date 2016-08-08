@@ -19,21 +19,23 @@ how to prevent sticky/fixed header and footers from eating into the rest of the 
     <body id="backToTop" style="background-color:#F5E3E2;"> 
         <header class="container group">
             
-            <section> <!-- Should the  class="container group" class go in the header element?? or here?-->
+            <!-- V.2 -->
+        <!--<section>
                 <h1 class="logo">
-                    <!-- this is like how a global logo will link back to the homepage? -->
+                    <!- this is like how a global logo will link back to the homepage ->
                     <a ref="index.html">Selina <br> Her</a>
                 </h1>
             </section>
             
-            <h3>designing for creativity + collaboration</h3>
+            <h3>designing for creativity + collaboration</h3>-->
             
             <!-- Fixed header doesn't work :( -->
-            <nav class="fixed fullWidth">
-                <!-- target="_blank" means the link will open in a new window -->    
-                <a href="index.html" target="_blank">Home</a>
-                <a href="portfolio.html" target="_blank">Portfolio</a>
-                <a href="contact.html" target="_blank">Contact</a>
+            <nav class="fixed">
+                <!-- target="_blank" means the link will open in a new window -->   
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
                 
                 <!-- Practice Page -->
                 <a href="practiceFloat.html">Practice Float</a>
@@ -44,7 +46,9 @@ how to prevent sticky/fixed header and footers from eating into the rest of the 
             <img class="largeImage" src="Images/Homepage/LMUHouse_Square.jpg" alt="Homepage Profile Pic">
         </section><!--
 
-        --><section class="group text">
+        -->
+
+        <section class="group text">
             <h1>Selina Her</h1>   
             <h3 style="color:#4C5361;">UI/UX Designer</h3>
             <h3 style="color:#4C5361;">Stanford University | B.S. Honors Candidate in Product Design</h3>
@@ -61,9 +65,7 @@ how to prevent sticky/fixed header and footers from eating into the rest of the 
             
             <!-- this references <body id="top"> -->
             <a href="#backToTop">Back to top</a>
-        </section>
-                
-
+        </section>    
         
         <footer class="primary-footer fullWidth">
             <nav>
